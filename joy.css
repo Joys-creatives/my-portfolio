@@ -1,0 +1,363 @@
+.brand{
+display: flex;
+align-items: center;
+
+}
+
+.brand-name{
+color: #131a28;
+font-weight: 700;
+text-decoration: none;
+font-size: 1.1rem;
+font-family: 'Times New Roman', Times, serif;
+}
+nav{
+
+display: flex;
+gap: 1.8rem;
+
+}
+
+nav a{
+text-decoration: none;
+font-weight: 500;
+color:#131a28
+
+}
+
+
+
+nav a:hover{
+    color: #0f766e;
+    text-underline-offset: 6px;
+    text-decoration: underline;
+}
+.site-header{
+position: sticky;
+top: 0;
+z-index: 10;
+background-color: whitesmoke;
+backdrop-filter: blur(6px);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0.9rem 5%;
+box-shadow: 0 2px 10px rgba (19, 26, 40, 0.06);
+}
+
+
+.hire{
+display: inline-block;
+background-color: #0f766e;
+color:white;
+padding: 0.7rem;
+border-radius: 8px;
+border: 2px solid #0f766e;
+cursor: pointer;
+transition: background-color 0.3s ease, transform o.3s ease;
+}
+
+
+.hire:hover{
+    color:#65d8d1
+}
+.projects{
+display: inline-block;
+background-color:  #0f766e;
+color:white;
+padding: 1.2rem;
+border-radius: 8px;
+border: 2px solid #0f766e;
+cursor: pointer;
+transition: background-color 0.3s ease, transform o.3s ease;
+text-decoration: none;
+}
+
+
+.contact{
+display: inline-block;
+color: #0f766e;
+padding: 1.2rem;
+border-radius: 8px;
+border: 2px solid #0f766e;
+cursor: pointer;
+transition: background-color 0.3s ease, transform o.3s ease;
+text-decoration: none;
+}
+
+.home-page{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 2rem;
+padding: 5rem 5%;
+background-color: whitesmoke;
+}
+.home-page-text{
+flex: 1;
+max-width: 520px;
+}
+
+.home-page-buttons{
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+.porttrait{
+    flex:0 0 auto;
+    text-align: center;
+}
+.portrait-frame{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 18px 40px rgba(15, 118, 110, 0.35);
+}
+
+/* ABOUT */
+.about{
+    background-color: white;
+   
+}
+.about-text{
+     text-align: center;
+    justify-content: center;
+}
+
+
+.about-grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1.5rem;
+max-width: 900px;
+margin: 0 auto;
+}
+
+.about-card{
+background-color: #0f766e;
+border-radius: 14px;
+padding:1.8rem;
+box-shadow: 0 6px 20px rgba(19, 26, 40, 0.06);
+}
+
+.facts li{
+    padding: 0.35rem;
+    color: black;
+    border-bottom: 1px dashed #e5e7eb;
+}
+
+.facts li:last-child{
+    border-bottom: none;
+}
+
+.skills{
+    padding: 4rem 5%;
+    text-align: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.skill-list{
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin: 0 auto;
+}
+
+.skill-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+.skill-name{
+    font-weight: 600;
+}
+
+
+.skill-value{
+    color: #0f766e;
+    font-weight: 600;
+}
+
+.skill-track{
+    height: 12px;
+    border-radius: 6px;
+    overflow:hidden;
+    background-color: #0f766e;
+}
+
+.skill-fill{
+    height: 100%;
+    background: linear-gradient(90deg, #0f766e, 0%, #14b8a6, 100%);
+    border-radius: 6px;
+    animation: fill-bar 2s ease-out forwards; 
+}
+
+
+
+
+@keyframes fill-bar{
+    to{
+        width: 100%;
+    }
+}
+
+.fill-html{
+    width: 90%;
+}
+
+
+.project{
+    padding: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card{
+    background-color: #14b8a6;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow:hidden;
+    text-align: center;
+}
+ 
+.project-thumb{
+    height: 170px;
+}
+
+.thumb-bio{
+    background: linear-gradient( 135deg, #F0FDFA 0%, #0f766e 100%);
+}
+
+
+.message{
+padding: 4rem 5%;
+background-color: #ffffff;
+text-align:center ;
+
+align-items: center;
+justify-content: center;
+}
+
+
+
+.message-form{
+padding: 2rem;
+margin: 0 auto;
+border-radius: 14px;
+align-items: center;
+justify-content: center;
+max-width: 560px;
+background-color: whitesmoke;
+
+}
+
+.message-field{
+display: flex;
+flex-direction: column;
+margin-bottom: 1.2rem;
+}
+
+.message-field label{
+font-weight: 600;
+margin-bottom: 0.4rem;
+font-size: 0.95rem;
+}
+.message-field input,
+.message-field textarea{
+padding: 0.7rem;
+border: 1px solid black;
+border-radius: 8px;
+font-size: 1rem;
+font-family: inherit;
+color: #0f766e;
+
+
+}
+
+.btn{
+display: inline-block;
+background-color: #0f766e;
+color:white;
+padding: 0.7rem;
+border-radius: 8px;
+border: 2px solid #0f766e;
+cursor: pointer;
+transition: background-color 0.3s ease, transform o.3s ease;
+}
+
+
+.btn:hover{
+    color:#65d8d1
+}
+
+
+.footer{
+    background-color: #14b8a6;
+    color: #ffffff;
+    text-align:center ;
+    padding: 2.5rem;
+
+}
+
+@media (max-width: 600px) {
+  /* Hide the header button to make room */
+  .btn-header {
+    display: none;
+  }
+
+  /* Nav links become smaller and closer together */
+  .main-nav {
+    gap: 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  /* Smaller name in the hero */
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Portrait shrinks to fit small screens */
+  .portrait-frame {
+    width: 190px;
+    height: 190px;
+  }
+
+  /* The face inside also shrinks */
+  .face {
+    width: 150px;
+    height: 150px;
+  }
+
+  .face-head {
+    width: 70px;
+    height: 70px;
+  }
+
+  .face-body {
+    width: 120px;
+    height: 70px;
+  }
+
+  /* Project grid becomes a single column */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
